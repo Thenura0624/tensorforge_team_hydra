@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hydra · Support workspace</title>
+  <link rel="icon" href="/ui/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/ui/styles.css">
+  <script src="/ui/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/" aria-label="Team Hydra home"><span class="mark">H</span><span>hydra<span class="brand-sub">SUPPORT WORKSPACE</span></span></a><div class="health"><span id="health-dot" class="dot"></span><span id="health-label">Connecting…</span><button id="refresh-health" class="icon-button" aria-label="Refresh server status">↻</button></div></header>
+  <main>
+    <section class="heading"><div><p class="eyebrow">TEAM HYDRA / TICKET ROUTING</p><h1>A little clarity for every ticket.</h1><p class="muted">Classify the issue. Find the right team. Keep support moving.</p></div><span class="tag">TensorForge 2.0</span></section>
+    <section class="connection" aria-label="API connection"><div><strong>Workspace access</strong><span id="key-status" class="muted">Enter your team API key to begin.</span></div><form id="key-form"><label class="sr-only" for="api-key">Team API key</label><input id="api-key" type="password" placeholder="Your team API key" autocomplete="off" required><button class="button small" type="submit">Use key</button><button id="clear-key" class="button subtle small" type="button" hidden>Clear</button></form></section>
+    <p class="privacy">Your key stays in this tab’s memory and is cleared on refresh.</p>
+    <div id="notice" class="notice" role="alert" hidden></div>
+    <nav class="tabs" aria-label="Workspace views"><button class="tab active" data-panel="single" aria-current="page">Single ticket</button><button class="tab" data-panel="batch">Batch tickets</button><button class="tab" data-panel="jobs">Job tracking</button></nav>
+
+    <section id="single" class="panel">
+      <div class="workspace-grid"><section class="card"><div class="card-heading"><div><p class="eyebrow">01 / INPUT</p><h2>What can we help with?</h2></div><span class="mini-tag">11 categories</span></div>
+        <form id="single-form"><div class="two-columns"><label>Channel<select id="channel"><option value="chat">Chat</option><option value="email">Email</option><option value="call_transcript">Call transcript</option></select></label><label>Ticket ID <span class="optional">optional</span><input id="ticket-id" maxlength="64" placeholder="e.g. HYDRA-001"></label></div>
+          <label>Subject <span class="optional">optional</span><input id="subject" maxlength="500" placeholder="A short summary of the issue"></label>
+          <label for="ticket-text">Customer message</label><textarea id="ticket-text" rows="7" maxlength="10000" required placeholder="Paste a customer’s message here…"></textarea><div class="field-footer"><span>English · Sinhala · Tamil · mixed language</span><span id="text-count">0 / 10,000</span></div>
+          <div class="form-actions"><button id="example" type="button" class="text-button">Try an example ↗</button><button id="classify" class="button" type="submit">Classify ticket <span aria-hidden="true">→</span></button></div>
+        </form>
+      </section>
+      <aside class="card result-card" aria-live="polite"><p class="eyebrow">02 / ROUTING RESULT</p><div id="result-empty" class="empty"><div class="empty-symbol">↗</div><h2>Ready when you are.</h2><p>Add a ticket to see its category,<br>assigned team, and urgency.</p></div><div id="result" hidden><div class="result-title"><h2 id="category"></h2><span id="urgent" class="pill"></span></div><p class="result-label">ROUTE TO</p><div id="team" class="team-name"></div><div class="confidence-row"><span>Primary confidence</span><strong id="confidence"></strong></div><progress id="confidence-bar" max="1" value="0"></progress><dl><div><dt>Secondary issue</dt><dd id="secondary"></dd></div><div><dt>Ticket ID</dt><dd id="result-id"></dd></div></dl><p class="confidence-note">Confidence is a model estimate. Review uncertain or safety-related tickets.</p><details><summary>View response JSON</summary><pre id="raw-result"></pre></details></div><div class="result-footer"><span class="tiny-dot"></span> Locally trained classification model</div></aside></div>
+    </section>
+
+    <section id="batch" class="panel" hidden><div class="card"><div class="card-heading"><div><p class="eyebrow">BATCH WORKSPACE</p><h2>A whole queue, one upload.</h2><p class="muted">Up to 100 tickets run immediately. Larger batches become background jobs.</p></div><button id="sample" class="button subtle small">Download example</button></div><form id="batch-form"><label class="upload" for="batch-file"><span class="upload-icon">↑</span><strong>Choose a JSON or JSONL file</strong><span class="muted">1–5,000 tickets · unique ticket IDs · up to 25 MiB</span><input id="batch-file" type="file" accept=".json,.jsonl,application/json"></label><label>Or paste your tickets<textarea id="batch-text" rows="6" placeholder='{"tickets":[{"ticket_id":"001","channel":"chat","text":"My order is late."}]}'></textarea></label><div class="form-actions"><span id="batch-file-name" class="muted">No file selected</span><button id="run-batch" class="button">Classify batch →</button></div></form></div></section>
+
+    <section id="jobs" class="panel" hidden><div class="card"><div class="card-heading"><div><p class="eyebrow">BACKGROUND PROCESSING</p><h2>Keep an eye on your queue.</h2></div></div><form id="job-form" class="job-lookup"><label class="grow">Job ID<input id="job-id" placeholder="Paste an existing job ID" required></label><button class="button" type="submit">Check job</button></form><div id="job-info" hidden aria-live="polite"><div class="job-line"><span id="job-status" class="pill"></span><span id="job-progress-text"></span></div><progress id="job-progress" max="1" value="0"></progress><p id="job-detail" class="muted"></p><div class="form-actions"><button id="cancel-job" class="button danger small">Cancel job</button><button id="view-job-results" class="button small" hidden>View results →</button></div></div></div></section>
+
+    <section id="results-section" class="card results-table" hidden><div class="card-heading"><div><p class="eyebrow">CLASSIFICATION RESULTS</p><h2 id="results-title">Your results</h2></div><button id="download-results" class="button subtle small">Download JSON ↓</button></div><div class="table-scroll"><table><thead><tr><th>Ticket</th><th>Category</th><th>Assigned team</th><th>Urgency</th><th>Confidence</th></tr></thead><tbody id="results-body"></tbody></table></div><div class="pagination"><span id="page-label" class="muted"></span><div><button id="previous-page" class="button subtle small">← Previous</button><button id="next-page" class="button subtle small">Next →</button></div></div></section>
+    <footer><span>Team Hydra <span class="footer-divider">/</span> Built for better support.</span><span id="model-version">Model information unavailable</span></footer>
+  </main>
+</body>
+</html>

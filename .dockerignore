@@ -1,0 +1,12 @@
+runtime
+data
+reports
+tests
+__pycache__
+**/__pycache__
+.venv
+.git
+.env
+.env.*
+secrets
+*.key
