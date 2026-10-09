@@ -6,7 +6,7 @@ Trained multilingual ML model and all seven API operations from the supplied v2.
 
 ## Run locally
 
-The integrated Team Hydra frontend is available at **http://localhost:8000/** after starting the API. It supports single tickets, JSON/JSONL batches, background jobs, and result downloads. Enter your configured API key in the page; it is held only in tab memory. See `TEAM_HYDRA.md` for the private-key launcher.
+The integrated Team Hydra frontend is available at after starting the API. It supports single tickets, JSON/JSONL batches, background jobs, and result downloads. Enter your configured API key in the page; it is held only in tab memory. See `TEAM_HYDRA.md` for the private-key launcher.
 
 Use Python 3.14 (tested with 3.14.3). From this folder:
 
