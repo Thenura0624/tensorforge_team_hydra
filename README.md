@@ -129,7 +129,9 @@ model-tournament/
 │   ├── generate_charts.py      # Reproduce the charts from saved results
 │   └── images/                # PNG charts embedded below
 └── verification.md            # Earlier development checks
-
+└── Demonstration_video/
+│  └── Demonstration_Video.mp4
+└── Team_Hydra_Design_and_Evaluation_Report.pdf
 ../tensorforge/                # Companion API, frontend, Docker and tests
 ```
 
@@ -379,6 +381,10 @@ Regenerate the charts from saved results:
 5. Run relevant checks and submit a pull request explaining behavior, verification and limitations.
 
 For training scripts, `check` reports CUDA availability. SVM `--smoke` is a software sanity check and cannot enter the tournament. For API changes, run `python -m unittest discover -s tests -v` from the companion API folder using its environment. Its optional neural test needs `NEURAL_TEST_MODEL` pointing to a saved model. Only load trusted artifacts, particularly pickle/joblib models. Do not tune against final validation labels and describe the resulting score as untouched.
+
+## 🎬 Demonstration Video
+
+You can watch the full demonstration video of the API and project features here: **[Demonstration_Video.mp4](Demonstration_video/Demonstration_Video.mp4)**
 
 ## 15. License
 
