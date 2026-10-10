@@ -1,0 +1,128 @@
+[
+  {
+    "features": "balanced",
+    "C": 0.25,
+    "balanced": false,
+    "accuracy": 0.98,
+    "macro_f1": 0.9775886411780784
+  },
+  {
+    "features": "balanced",
+    "C": 0.25,
+    "balanced": true,
+    "accuracy": 0.98,
+    "macro_f1": 0.9761009518706203
+  },
+  {
+    "features": "balanced",
+    "C": 1.0,
+    "balanced": false,
+    "accuracy": 0.9816666666666667,
+    "macro_f1": 0.9798153348902503
+  },
+  {
+    "features": "balanced",
+    "C": 1.0,
+    "balanced": true,
+    "accuracy": 0.98,
+    "macro_f1": 0.9777430981179223
+  },
+  {
+    "features": "balanced",
+    "C": 4.0,
+    "balanced": false,
+    "accuracy": 0.98,
+    "macro_f1": 0.9774419972136325
+  },
+  {
+    "features": "balanced",
+    "C": 4.0,
+    "balanced": true,
+    "accuracy": 0.98,
+    "macro_f1": 0.9774419972136325
+  },
+  {
+    "features": "char_heavy",
+    "C": 0.25,
+    "balanced": false,
+    "accuracy": 0.9766666666666667,
+    "macro_f1": 0.9742911166063322
+  },
+  {
+    "features": "char_heavy",
+    "C": 0.25,
+    "balanced": true,
+    "accuracy": 0.9766666666666667,
+    "macro_f1": 0.9741747146238947
+  },
+  {
+    "features": "char_heavy",
+    "C": 1.0,
+    "balanced": false,
+    "accuracy": 0.98,
+    "macro_f1": 0.9769415196692919
+  },
+  {
+    "features": "char_heavy",
+    "C": 1.0,
+    "balanced": true,
+    "accuracy": 0.98,
+    "macro_f1": 0.9769415196692919
+  },
+  {
+    "features": "char_heavy",
+    "C": 4.0,
+    "balanced": false,
+    "accuracy": 0.9816666666666667,
+    "macro_f1": 0.9790644515697767
+  },
+  {
+    "features": "char_heavy",
+    "C": 4.0,
+    "balanced": true,
+    "accuracy": 0.9816666666666667,
+    "macro_f1": 0.9790644515697767
+  },
+  {
+    "features": "word_heavy",
+    "C": 0.25,
+    "balanced": false,
+    "accuracy": 0.9766666666666667,
+    "macro_f1": 0.9711759993959455
+  },
+  {
+    "features": "word_heavy",
+    "C": 0.25,
+    "balanced": true,
+    "accuracy": 0.9766666666666667,
+    "macro_f1": 0.9721669584773884
+  },
+  {
+    "features": "word_heavy",
+    "C": 1.0,
+    "balanced": false,
+    "accuracy": 0.975,
+    "macro_f1": 0.9717374827798796
+  },
+  {
+    "features": "word_heavy",
+    "C": 1.0,
+    "balanced": true,
+    "accuracy": 0.9766666666666667,
+    "macro_f1": 0.9742723018245362
+  },
+  {
+    "features": "word_heavy",
+    "C": 4.0,
+    "balanced": false,
+    "accuracy": 0.98,
+    "macro_f1": 0.9781174677753668
+  },
+  {
+    "features": "word_heavy",
+    "C": 4.0,
+    "balanced": true,
+    "accuracy": 0.98,
+    "macro_f1": 0.9781174677753668
+  }
+]

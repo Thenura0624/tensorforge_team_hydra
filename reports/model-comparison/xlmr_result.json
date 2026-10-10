@@ -1,0 +1,267 @@
+{
+  "protocol": "tensorforge-tournament-v1",
+  "family": "xlmr",
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "backbone": "FacebookAI/xlm-roberta-base",
+    "learning_rate": 3e-05,
+    "max_length": 256,
+    "epochs": 5,
+    "seed": 42,
+    "batch_size": 2,
+    "accumulation": 8,
+    "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089"
+  },
+  "manifest_fingerprint": "2843dae5e322c80651914ff25e71a44c89b1cb3b53a336247aa866a289b4e091",
+  "train_sha256": "5cf55e7dcec6a4ef46e3d978763be0397825840c67338922d93d292dc86ccb9a",
+  "selection_metrics": {
+    "primary": {
+      "accuracy": 0.9983333333333333,
+      "macro_f1": 0.9975278404083642,
+      "classes": {
+        "payment_refund": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 108.0
+        },
+        "ride_trip_issue": {
+          "precision": 0.9882352941176471,
+          "recall": 1.0,
+          "f1-score": 0.9940828402366864,
+          "support": 84.0
+        },
+        "lost_item": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "order_missing_wrong": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        },
+        "delivery_delay": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 90.0
+        },
+        "food_quality": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 42.0
+        },
+        "account_promo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 54.0
+        },
+        "safety_conduct": {
+          "precision": 1.0,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9787234042553191,
+          "support": 24.0
+        },
+        "app_technical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 48.0
+        },
+        "general_inquiry": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "spam_irrelevant": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "accuracy": 0.9983333333333333,
+        "macro avg": {
+          "precision": 0.9989304812834224,
+          "recall": 0.9962121212121212,
+          "f1-score": 0.9975278404083642,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.9983529411764706,
+          "recall": 0.9983333333333333,
+          "f1-score": 0.998320533803349,
+          "support": 600.0
+        }
+      }
+    },
+    "secondary": {
+      "accuracy": 0.9983333333333333,
+      "macro_f1": 0.4977874213543003,
+      "classes": {
+        "payment_refund": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "ride_trip_issue": {
+          "precision": 1.0,
+          "recall": 0.95,
+          "f1-score": 0.9743589743589743,
+          "support": 20.0
+        },
+        "lost_item": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "order_missing_wrong": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "delivery_delay": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "food_quality": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "account_promo": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "safety_conduct": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "app_technical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "general_inquiry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "spam_irrelevant": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "none": {
+          "precision": 0.9981818181818182,
+          "recall": 1.0,
+          "f1-score": 0.9990900818926297,
+          "support": 549.0
+        },
+        "accuracy": 0.9983333333333333,
+        "macro avg": {
+          "precision": 0.4998484848484848,
+          "recall": 0.49583333333333335,
+          "f1-score": 0.4977874213543003,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.9983363636363637,
+          "recall": 0.9983333333333333,
+          "f1-score": 0.9983127240770553,
+          "support": 600.0
+        }
+      }
+    },
+    "urgency": {
+      "accuracy": 0.9983333333333333,
+      "macro_f1": 0.9953357846376294,
+      "classes": {
+        "not_urgent": {
+          "precision": 0.9981515711645101,
+          "recall": 1.0,
+          "f1-score": 0.9990749306197965,
+          "support": 540.0
+        },
+        "urgent": {
+          "precision": 1.0,
+          "recall": 0.9833333333333333,
+          "f1-score": 0.9915966386554622,
+          "support": 60.0
+        },
+        "accuracy": 0.9983333333333333,
+        "macro avg": {
+          "precision": 0.9990757855822551,
+          "recall": 0.9916666666666667,
+          "f1-score": 0.9953357846376294,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.9983364140480592,
+          "recall": 0.9983333333333333,
+          "f1-score": 0.998327101423363,
+          "support": 600.0
+        }
+      }
+    },
+    "joint_accuracy": 0.9983333333333333,
+    "by_language": {
+      "en": {
+        "count": 214,
+        "primary_accuracy": 1.0
+      },
+      "mixed": {
+        "count": 19,
+        "primary_accuracy": 1.0
+      },
+      "si": {
+        "count": 107,
+        "primary_accuracy": 1.0
+      },
+      "singlish": {
+        "count": 148,
+        "primary_accuracy": 1.0
+      },
+      "ta": {
+        "count": 101,
+        "primary_accuracy": 1.0
+      },
+      "tanglish": {
+        "count": 11,
+        "primary_accuracy": 0.9090909090909091
+      }
+    },
+    "primary_log_loss": 0.007133484572008646
+  },
+  "versions": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "torch": "2.10.0+cu128",
+    "transformers": "5.0.0",
+    "tokenizers": "0.22.2",
+    "sentencepiece": "0.2.2",
+    "safetensors": "0.7.0"
+  },
+  "elapsed_seconds": 2653.7197429999997
+}

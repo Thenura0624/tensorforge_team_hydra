@@ -1,0 +1,751 @@
+[
+  {
+    "family": "xlmr",
+    "run_dir": "C:\\Users\\ASUS\\Documents\\Codex\\2026-10-09\\train-and-evaluate-a-baseline-ml\\outputs\\model-tournament\\results_xlmr",
+    "config": {
+      "backbone": "FacebookAI/xlm-roberta-base",
+      "learning_rate": 3e-05,
+      "max_length": 256,
+      "epochs": 5,
+      "seed": 42,
+      "batch_size": 2,
+      "accumulation": 8,
+      "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089"
+    },
+    "metrics": {
+      "primary": {
+        "accuracy": 0.9983333333333333,
+        "macro_f1": 0.9975278404083642,
+        "classes": {
+          "payment_refund": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 108.0
+          },
+          "ride_trip_issue": {
+            "precision": 0.9882352941176471,
+            "recall": 1.0,
+            "f1-score": 0.9940828402366864,
+            "support": 84.0
+          },
+          "lost_item": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 30.0
+          },
+          "order_missing_wrong": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 72.0
+          },
+          "delivery_delay": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 90.0
+          },
+          "food_quality": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "account_promo": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 54.0
+          },
+          "safety_conduct": {
+            "precision": 1.0,
+            "recall": 0.9583333333333334,
+            "f1-score": 0.9787234042553191,
+            "support": 24.0
+          },
+          "app_technical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 48.0
+          },
+          "general_inquiry": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 30.0
+          },
+          "spam_irrelevant": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 18.0
+          },
+          "accuracy": 0.9983333333333333,
+          "macro avg": {
+            "precision": 0.9989304812834224,
+            "recall": 0.9962121212121212,
+            "f1-score": 0.9975278404083642,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9983529411764706,
+            "recall": 0.9983333333333333,
+            "f1-score": 0.998320533803349,
+            "support": 600.0
+          }
+        }
+      },
+      "secondary": {
+        "accuracy": 0.9983333333333333,
+        "macro_f1": 0.4977874213543003,
+        "classes": {
+          "payment_refund": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 10.0
+          },
+          "ride_trip_issue": {
+            "precision": 1.0,
+            "recall": 0.95,
+            "f1-score": 0.9743589743589743,
+            "support": 20.0
+          },
+          "lost_item": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "order_missing_wrong": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+          },
+          "delivery_delay": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 10.0
+          },
+          "food_quality": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "account_promo": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "safety_conduct": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "app_technical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 6.0
+          },
+          "general_inquiry": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "spam_irrelevant": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "none": {
+            "precision": 0.9981818181818182,
+            "recall": 1.0,
+            "f1-score": 0.9990900818926297,
+            "support": 549.0
+          },
+          "accuracy": 0.9983333333333333,
+          "macro avg": {
+            "precision": 0.4998484848484848,
+            "recall": 0.49583333333333335,
+            "f1-score": 0.4977874213543003,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9983363636363637,
+            "recall": 0.9983333333333333,
+            "f1-score": 0.9983127240770553,
+            "support": 600.0
+          }
+        }
+      },
+      "urgency": {
+        "accuracy": 0.9983333333333333,
+        "macro_f1": 0.9953357846376294,
+        "classes": {
+          "not_urgent": {
+            "precision": 0.9981515711645101,
+            "recall": 1.0,
+            "f1-score": 0.9990749306197965,
+            "support": 540.0
+          },
+          "urgent": {
+            "precision": 1.0,
+            "recall": 0.9833333333333333,
+            "f1-score": 0.9915966386554622,
+            "support": 60.0
+          },
+          "accuracy": 0.9983333333333333,
+          "macro avg": {
+            "precision": 0.9990757855822551,
+            "recall": 0.9916666666666667,
+            "f1-score": 0.9953357846376294,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9983364140480592,
+            "recall": 0.9983333333333333,
+            "f1-score": 0.998327101423363,
+            "support": 600.0
+          }
+        }
+      },
+      "joint_accuracy": 0.9983333333333333,
+      "by_language": {
+        "en": {
+          "count": 214,
+          "primary_accuracy": 1.0
+        },
+        "mixed": {
+          "count": 19,
+          "primary_accuracy": 1.0
+        },
+        "si": {
+          "count": 107,
+          "primary_accuracy": 1.0
+        },
+        "singlish": {
+          "count": 148,
+          "primary_accuracy": 1.0
+        },
+        "ta": {
+          "count": 101,
+          "primary_accuracy": 1.0
+        },
+        "tanglish": {
+          "count": 11,
+          "primary_accuracy": 0.9090909090909091
+        }
+      }
+    }
+  },
+  {
+    "family": "svm",
+    "run_dir": "C:\\Users\\ASUS\\Documents\\Codex\\2026-10-09\\train-and-evaluate-a-baseline-ml\\outputs\\model-tournament\\results_svm",
+    "config": {
+      "features": "balanced",
+      "primary_C": 1.0,
+      "primary_balanced": false,
+      "secondary_C": 4.0,
+      "secondary_balanced": false,
+      "urgent_C": 1.0,
+      "urgent_balanced": true
+    },
+    "metrics": {
+      "primary": {
+        "accuracy": 0.99,
+        "macro_f1": 0.989162136732567,
+        "classes": {
+          "payment_refund": {
+            "precision": 1.0,
+            "recall": 0.9907407407407407,
+            "f1-score": 0.9953488372093023,
+            "support": 108.0
+          },
+          "ride_trip_issue": {
+            "precision": 0.9880952380952381,
+            "recall": 0.9880952380952381,
+            "f1-score": 0.9880952380952381,
+            "support": 84.0
+          },
+          "lost_item": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 30.0
+          },
+          "order_missing_wrong": {
+            "precision": 1.0,
+            "recall": 0.9861111111111112,
+            "f1-score": 0.993006993006993,
+            "support": 72.0
+          },
+          "delivery_delay": {
+            "precision": 0.9888888888888889,
+            "recall": 0.9888888888888889,
+            "f1-score": 0.9888888888888889,
+            "support": 90.0
+          },
+          "food_quality": {
+            "precision": 0.9767441860465116,
+            "recall": 1.0,
+            "f1-score": 0.9882352941176471,
+            "support": 42.0
+          },
+          "account_promo": {
+            "precision": 0.9642857142857143,
+            "recall": 1.0,
+            "f1-score": 0.9818181818181818,
+            "support": 54.0
+          },
+          "safety_conduct": {
+            "precision": 1.0,
+            "recall": 0.9583333333333334,
+            "f1-score": 0.9787234042553191,
+            "support": 24.0
+          },
+          "app_technical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 48.0
+          },
+          "general_inquiry": {
+            "precision": 0.9666666666666667,
+            "recall": 0.9666666666666667,
+            "f1-score": 0.9666666666666667,
+            "support": 30.0
+          },
+          "spam_irrelevant": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 18.0
+          },
+          "accuracy": 0.99,
+          "macro avg": {
+            "precision": 0.989516426725729,
+            "recall": 0.9889850889850891,
+            "f1-score": 0.989162136732567,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9901578073089701,
+            "recall": 0.99,
+            "f1-score": 0.9900126729805979,
+            "support": 600.0
+          }
+        }
+      },
+      "secondary": {
+        "accuracy": 0.9983333333333333,
+        "macro_f1": 0.4977874213543003,
+        "classes": {
+          "payment_refund": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 10.0
+          },
+          "ride_trip_issue": {
+            "precision": 1.0,
+            "recall": 0.95,
+            "f1-score": 0.9743589743589743,
+            "support": 20.0
+          },
+          "lost_item": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "order_missing_wrong": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+          },
+          "delivery_delay": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 10.0
+          },
+          "food_quality": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "account_promo": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "safety_conduct": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "app_technical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 6.0
+          },
+          "general_inquiry": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "spam_irrelevant": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "none": {
+            "precision": 0.9981818181818182,
+            "recall": 1.0,
+            "f1-score": 0.9990900818926297,
+            "support": 549.0
+          },
+          "accuracy": 0.9983333333333333,
+          "macro avg": {
+            "precision": 0.4998484848484848,
+            "recall": 0.49583333333333335,
+            "f1-score": 0.4977874213543003,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9983363636363637,
+            "recall": 0.9983333333333333,
+            "f1-score": 0.9983127240770553,
+            "support": 600.0
+          }
+        }
+      },
+      "urgency": {
+        "accuracy": 0.9983333333333333,
+        "macro_f1": 0.9953357846376294,
+        "classes": {
+          "not_urgent": {
+            "precision": 0.9981515711645101,
+            "recall": 1.0,
+            "f1-score": 0.9990749306197965,
+            "support": 540.0
+          },
+          "urgent": {
+            "precision": 1.0,
+            "recall": 0.9833333333333333,
+            "f1-score": 0.9915966386554622,
+            "support": 60.0
+          },
+          "accuracy": 0.9983333333333333,
+          "macro avg": {
+            "precision": 0.9990757855822551,
+            "recall": 0.9916666666666667,
+            "f1-score": 0.9953357846376294,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9983364140480592,
+            "recall": 0.9983333333333333,
+            "f1-score": 0.998327101423363,
+            "support": 600.0
+          }
+        }
+      },
+      "joint_accuracy": 0.99,
+      "by_language": {
+        "en": {
+          "count": 214,
+          "primary_accuracy": 0.9766355140186916
+        },
+        "mixed": {
+          "count": 19,
+          "primary_accuracy": 1.0
+        },
+        "si": {
+          "count": 107,
+          "primary_accuracy": 1.0
+        },
+        "singlish": {
+          "count": 148,
+          "primary_accuracy": 1.0
+        },
+        "ta": {
+          "count": 101,
+          "primary_accuracy": 1.0
+        },
+        "tanglish": {
+          "count": 11,
+          "primary_accuracy": 0.9090909090909091
+        }
+      }
+    }
+  },
+  {
+    "family": "mdeberta",
+    "run_dir": "C:\\Users\\ASUS\\Documents\\Codex\\2026-10-09\\train-and-evaluate-a-baseline-ml\\outputs\\model-tournament\\results_mdeberta",
+    "config": {
+      "backbone": "microsoft/mdeberta-v3-base",
+      "learning_rate": 3e-05,
+      "max_length": 256,
+      "epochs": 5,
+      "seed": 42,
+      "batch_size": 2,
+      "accumulation": 8,
+      "revision": "a0484667b22365f84929a935b5e50a51f71f159d"
+    },
+    "metrics": {
+      "primary": {
+        "accuracy": 0.9883333333333333,
+        "macro_f1": 0.9860354984979556,
+        "classes": {
+          "payment_refund": {
+            "precision": 0.972972972972973,
+            "recall": 1.0,
+            "f1-score": 0.9863013698630136,
+            "support": 108.0
+          },
+          "ride_trip_issue": {
+            "precision": 0.9882352941176471,
+            "recall": 1.0,
+            "f1-score": 0.9940828402366864,
+            "support": 84.0
+          },
+          "lost_item": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 30.0
+          },
+          "order_missing_wrong": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 72.0
+          },
+          "delivery_delay": {
+            "precision": 0.9888888888888889,
+            "recall": 0.9888888888888889,
+            "f1-score": 0.9888888888888889,
+            "support": 90.0
+          },
+          "food_quality": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 42.0
+          },
+          "account_promo": {
+            "precision": 1.0,
+            "recall": 0.9629629629629629,
+            "f1-score": 0.9811320754716981,
+            "support": 54.0
+          },
+          "safety_conduct": {
+            "precision": 1.0,
+            "recall": 0.9583333333333334,
+            "f1-score": 0.9787234042553191,
+            "support": 24.0
+          },
+          "app_technical": {
+            "precision": 0.9791666666666666,
+            "recall": 0.9791666666666666,
+            "f1-score": 0.9791666666666666,
+            "support": 48.0
+          },
+          "general_inquiry": {
+            "precision": 0.9666666666666667,
+            "recall": 0.9666666666666667,
+            "f1-score": 0.9666666666666667,
+            "support": 30.0
+          },
+          "spam_irrelevant": {
+            "precision": 1.0,
+            "recall": 0.9444444444444444,
+            "f1-score": 0.9714285714285714,
+            "support": 18.0
+          },
+          "accuracy": 0.9883333333333333,
+          "macro avg": {
+            "precision": 0.9905391353920766,
+            "recall": 0.9818602693602693,
+            "f1-score": 0.9860354984979556,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9884880763116056,
+            "recall": 0.9883333333333333,
+            "f1-score": 0.9882995243140013,
+            "support": 600.0
+          }
+        }
+      },
+      "secondary": {
+        "accuracy": 0.99,
+        "macro_f1": 0.474167317200104,
+        "classes": {
+          "payment_refund": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1-score": 0.9,
+            "support": 10.0
+          },
+          "ride_trip_issue": {
+            "precision": 0.8636363636363636,
+            "recall": 0.95,
+            "f1-score": 0.9047619047619048,
+            "support": 20.0
+          },
+          "lost_item": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "order_missing_wrong": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+          },
+          "delivery_delay": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1-score": 0.8888888888888888,
+            "support": 10.0
+          },
+          "food_quality": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "account_promo": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "safety_conduct": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "app_technical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 6.0
+          },
+          "general_inquiry": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "spam_irrelevant": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "none": {
+            "precision": 0.9963570127504554,
+            "recall": 0.9963570127504554,
+            "f1-score": 0.9963570127504554,
+            "support": 549.0
+          },
+          "accuracy": 0.99,
+          "macro avg": {
+            "precision": 0.47999944803223493,
+            "recall": 0.47052975106253797,
+            "f1-score": 0.474167317200104,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9904545454545454,
+            "recall": 0.99,
+            "f1-score": 0.989973544973545,
+            "support": 600.0
+          }
+        }
+      },
+      "urgency": {
+        "accuracy": 0.9933333333333333,
+        "macro_f1": 0.9814814814814815,
+        "classes": {
+          "not_urgent": {
+            "precision": 0.9962962962962963,
+            "recall": 0.9962962962962963,
+            "f1-score": 0.9962962962962963,
+            "support": 540.0
+          },
+          "urgent": {
+            "precision": 0.9666666666666667,
+            "recall": 0.9666666666666667,
+            "f1-score": 0.9666666666666667,
+            "support": 60.0
+          },
+          "accuracy": 0.9933333333333333,
+          "macro avg": {
+            "precision": 0.9814814814814815,
+            "recall": 0.9814814814814815,
+            "f1-score": 0.9814814814814815,
+            "support": 600.0
+          },
+          "weighted avg": {
+            "precision": 0.9933333333333333,
+            "recall": 0.9933333333333333,
+            "f1-score": 0.9933333333333333,
+            "support": 600.0
+          }
+        }
+      },
+      "joint_accuracy": 0.975,
+      "by_language": {
+        "en": {
+          "count": 214,
+          "primary_accuracy": 0.9719626168224299
+        },
+        "mixed": {
+          "count": 19,
+          "primary_accuracy": 1.0
+        },
+        "si": {
+          "count": 107,
+          "primary_accuracy": 1.0
+        },
+        "singlish": {
+          "count": 148,
+          "primary_accuracy": 1.0
+        },
+        "ta": {
+          "count": 101,
+          "primary_accuracy": 1.0
+        },
+        "tanglish": {
+          "count": 11,
+          "primary_accuracy": 0.9090909090909091
+        }
+      }
+    }
+  }
+]

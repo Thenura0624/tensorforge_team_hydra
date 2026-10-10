@@ -1,0 +1,13 @@
+{
+  "family": "svm",
+  "config": {
+    "features": "balanced",
+    "primary_C": 1.0,
+    "primary_balanced": false,
+    "secondary_C": 4.0,
+    "secondary_balanced": false,
+    "urgent_C": 1.0,
+    "urgent_balanced": true
+  },
+  "seed": 42
+}
