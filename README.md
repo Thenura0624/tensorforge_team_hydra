@@ -79,3 +79,7 @@ Training uses only the 4,000 supplied training rows. The 800 validation rows are
 All five integration test methods passed, including a 5,000-ticket job. A real HTTP smoke test also passed, including forced-process-restart recovery. See `reports/verification.md` for measured timings and remaining verification limits.
 
 The pasted planning document was treated as context. The supplied OpenAPI/JSON Schemas control implementation where they differ: DELETE is required, asynchronous jobs accept 1–5,000 items, and language is not an API feature. Dashboard creation, hosting, competition submission and video production are outside this implementation.
+
+## 🎬 Demonstration Video
+
+You can watch the full demonstration video of the API and project features here: **[Demonstration_Video.mp4](Demonstration_video/Demonstration_Video.mp4)**
