@@ -396,4 +396,4 @@ Dataset and pretrained model terms are separate. Consult supplied dataset/compet
 
 **Team Hydra** — TensorForge 2.0 MVP project.
 
-Individual names and public contact information have not been supplied. Use repository issues for project discussion once the repository is shared. Add team-approved contributor names and a public contact channel before submission. Do not publish private credentials or personal contact details without consent.
+Individual names and public contact information have not been supplied. Use repository issues for project discussion once the repository is shared. Add team-approved contributor names and a public contact channel before submission. Do not publish private credentials or personal contact details without consent
